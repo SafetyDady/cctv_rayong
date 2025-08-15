@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Installation & Security System | SecureVision Rayong</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Kanit', sans-serif; }
+        .hero-bg { 
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><rect width="1000" height="1000" fill="%23f3f4f6"/><circle cx="200" cy="200" r="100" fill="%23e5e7eb" opacity="0.5"/><circle cx="800" cy="300" r="150" fill="%23d1d5db" opacity="0.3"/><circle cx="400" cy="700" r="120" fill="%23e5e7eb" opacity="0.4"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-item:hover { color: #3b82f6; transition: color 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
+        .portfolio-item:hover img { transform: scale(1.05); transition: transform 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="bg-blue-600 text-white px-3 py-2 rounded font-bold text-lg">
+                        SECUREVISION
+                    </div>
+                    <span class="ml-2 text-gray-600 text-sm">RAYONG</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="nav-item text-gray-700 hover:text-blue-600">เกี่ยวกับเรา</a>
+                    <a href="#services" class="nav-item text-gray-700 hover:text-blue-600">บริการของเรา</a>
+                    <a href="#portfolio" class="nav-item text-gray-700 hover:text-blue-600">ผลงาน</a>
+                    <a href="#technology" class="nav-item text-gray-700 hover:text-blue-600">เทคโนโลยี</a>
+                    <a href="#contact" class="nav-item text-gray-700 hover:text-blue-600">ติดต่อเรา</a>
+                    <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                        TH
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden py-4 border-t">
+                <div class="flex flex-col space-y-4">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">เกี่ยวกับเรา</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600">บริการของเรา</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600">ผลงาน</a>
+                    <a href="#technology" class="text-gray-700 hover:text-blue-600">เทคโนโลยี</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">ติดต่อเรา</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+                        Professional CCTV & Security System Installation
+                    </h1>
+                    <p class="text-xl text-blue-100 leading-relaxed">
+                        โซลูชันระบบรักษาความปลอดภัยแบบครบวงจรที่ครอบคลุมการออกแบบ การติดตั้งอุปกรณ์ และการบำรุงรักษา
+                    </p>
+                    
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-shield-alt text-2xl"></i>
+                            </div>
+                            <div class="text-sm">มาตรฐานความปลอดภัย</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-users text-2xl"></i>
+                            </div>
+                            <div class="text-sm">ทีมงานที่เชี่ยวชาญ</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-cogs text-2xl"></i>
+                            </div>
+                            <div class="text-sm">งานวิศวกรรมคุณภาพสูง</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-headset text-2xl"></i>
+                            </div>
+                            <div class="text-sm">บริการครบวงจร</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23374151'/><rect x='50' y='50' width='300' height='200' fill='%23111827' rx='10'/><circle cx='200' cy='150' r='30' fill='%233b82f6'/><rect x='170' y='120' width='60' height='60' fill='none' stroke='%233b82f6' stroke-width='2'/><text x='200' y='250' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-size='14'>CCTV System</text></svg>" 
+                             alt="CCTV System" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f3f4f6'/><rect x='50' y='50' width='500' height='300' fill='%23e5e7eb' rx='10'/><rect x='100' y='100' width='100' height='80' fill='%233b82f6' rx='5'/><rect x='250' y='100' width='100' height='80' fill='%233b82f6' rx='5'/><rect x='400' y='100' width='100' height='80' fill='%233b82f6' rx='5'/><rect x='100' y='220' width='100' height='80' fill='%236b7280' rx='5'/><rect x='250' y='220' width='100' height='80' fill='%236b7280' rx='5'/><rect x='400' y='220' width='100' height='80' fill='%236b7280' rx='5'/><text x='300' y='350' text-anchor='middle' fill='%23374151' font-family='Arial' font-size='16'>Security Control Room</text></svg>" 
+                         alt="Security Control Room" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                </div>
+                
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">
+                        โซลูชันระบบรักษาความปลอดภัย ครบวงจร และ มีคุณภาพ
+                        <span class="text-blue-600">(Professional Security System Solution)</span>
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        ระบบกล้องวงจรปิด (CCTV) แบบครบวงจรที่ครอบคลุมการออกแบบ การจัดหาอุปกรณ์ และการติดตั้ง
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h3 class="font-semibold text-gray-900">ทีมงานที่เชี่ยวชาญประสบการณ์สูง</h3>
+                            <p class="text-sm text-gray-600">
+                                ติดตั้งระบบมากกว่า 500 โครงการ และดูแลระบบกว่า 10,000 จุด
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <h3 class="font-semibold text-gray-900">งานวิศวกรรมที่มีคุณภาพสูง</h3>
+                            <p class="text-sm text-gray-600">
+                                ทีมงานภายในองค์กรที่มีความเชี่ยวชาญและปฏิบัติตามมาตรฐานต่าง ๆ (IP65, IP67, IEC, IEEE)
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <h3 class="font-semibold text-gray-900">บริการครบวงจร</h3>
+                            <p class="text-sm text-gray-600">
+                                ตั้งแต่การสำรวจพื้นที่จนถึงการดำเนินงานและบำรุงรักษา
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <h3 class="font-semibold text-gray-900">คุณภาพที่ได้รับการรับรอง</h3>
+                            <p class="text-sm text-gray-600">
+                                ได้รับการรับรองมาตรฐาน ISO 9001:2015 และใช้อุปกรณ์จากแบรนด์ชั้นนำ
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-blue-900 mb-2">การบริหารจัดการงานติดตั้ง</h4>
+                        <p class="text-blue-700 text-sm">
+                            เป็นไปตามมาตรฐานสากล และใช้เทคโนโลยีล้ำสมัยจากประเทศญี่ปุ่น เกาหลี และยุโรป
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    CCTV Installation Types
+                </h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    เรามีตัวเลือกการติดตั้งระบบกล้องวงจรปิด (CCTV) หลากหลายรูปแบบเพื่อให้ได้ความปลอดภัยที่สูงสุด
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-industry text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            ระบบกล้องวงจรปิดสำหรับโรงงานอุตสาหกรรม
+                            <br><span class="text-sm text-gray-600">(Industrial CCTV System)</span>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            ใช้เพื่อรักษาความปลอดภัยในโรงงานและควบคุมกระบวนการผลิต
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center">
+                        <i class="fas fa-building text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            ระบบกล้องวงจรปิดสำหรับอาคารสำนักงาน
+                            <br><span class="text-sm text-gray-600">(Office Building CCTV)</span>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            ช่วยลดความเสี่ยงด้านความปลอดภัยและควบคุมการเข้าออกอาคาร
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                        <i class="fas fa-home text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            ระบบกล้องวงจรปิดสำหรับหมู่บ้านจัดสรร
+                            <br><span class="text-sm text-gray-600">(Residential CCTV System)</span>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            ใช้พื้นที่ส่วนกลางให้เกิดประโยชน์ในการรักษาความปลอดภัย
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Project 1 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="portfolio-item">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23374151'/><rect x='50' y='50' width='500' height='300' fill='%23111827' rx='10'/><rect x='100' y='100' width='400' height='200' fill='%23374151' rx='5'/><circle cx='150' cy='150' r='15' fill='%233b82f6'/><circle cx='250' cy='150' r='15' fill='%233b82f6'/><circle cx='350' cy='150' r='15' fill='%233b82f6'/><circle cx='450' cy='150' r='15' fill='%233b82f6'/><circle cx='150' cy='250' r='15' fill='%233b82f6'/><circle cx='250' cy='250' r='15' fill='%233b82f6'/><circle cx='350' cy='250' r='15' fill='%233b82f6'/><circle cx='450' cy='250' r='15' fill='%233b82f6'/><text x='300' y='380' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-size='14'>Industrial CCTV Network</text></svg>" 
+                         alt="Industrial CCTV Project" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="space-y-6">
+                    <div class="text-right">
+                        <div class="text-4xl font-bold text-blue-600">128 จุด</div>
+                        <div class="text-2xl font-bold text-gray-900">Industrial CCTV System</div>
+                    </div>
+                    <div class="space-y-2 text-right">
+                        <div><strong>Client:</strong> บริษัท ไทยออยล์ จำกัด (มหาชน)</div>
+                        <div><strong>Location:</strong> ระยอง, ประเทศไทย</div>
+                        <div><strong>As an EPC (Partner with HIKVISION & DAHUA)</strong> - 2023</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="space-y-6 lg:order-2">
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600">64 จุด</div>
+                        <div class="text-2xl font-bold text-gray-900">Office Building CCTV</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div><strong>Client:</strong> บริษัท ปตท. จำกัด (มหาชน)</div>
+                        <div><strong>Location:</strong> ระยอง, ประเทศไทย</div>
+                        <div><strong>As an EPC (Partner with AXIS & BOSCH)</strong> - 2023</div>
+                    </div>
+                </div>
+                <div class="portfolio-item lg:order-1">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23f3f4f6'/><rect x='50' y='50' width='500' height='300' fill='%23ffffff' rx='10' stroke='%23e5e7eb' stroke-width='2'/><rect x='100' y='100' width='150' height='100' fill='%23ddd6fe' rx='5'/><rect x='300' y='100' width='150' height='100' fill='%23ddd6fe' rx='5'/><rect x='100' y='220' width='150' height='100' fill='%23bfdbfe' rx='5'/><rect x='300' y='220' width='150' height='100' fill='%23bfdbfe' rx='5'/><circle cx='175' cy='150' r='8' fill='%233b82f6'/><circle cx='375' cy='150' r='8' fill='%233b82f6'/><circle cx='175' cy='270' r='8' fill='%233b82f6'/><circle cx='375' cy='270' r='8' fill='%233b82f6'/><text x='300' y='380' text-anchor='middle' fill='%23374151' font-family='Arial' font-size='14'>Office CCTV System</text></svg>" 
+                         alt="Office CCTV Project" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="portfolio-item">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23065f46'/><rect x='50' y='50' width='500' height='300' fill='%23047857' rx='10'/><rect x='100' y='100' width='80' height='60' fill='%23059669' rx='3'/><rect x='200' y='100' width='80' height='60' fill='%23059669' rx='3'/><rect x='300' y='100' width='80' height='60' fill='%23059669' rx='3'/><rect x='400' y='100' width='80' height='60' fill='%23059669' rx='3'/><rect x='100' y='180' width='80' height='60' fill='%23059669' rx='3'/><rect x='200' y='180' width='80' height='60' fill='%23059669' rx='3'/><rect x='300' y='180' width='80' height='60' fill='%23059669' rx='3'/><rect x='400' y='180' width='80' height='60' fill='%23059669' rx='3'/><rect x='100' y='260' width='80' height='60' fill='%23059669' rx='3'/><rect x='200' y='260' width='80' height='60' fill='%23059669' rx='3'/><rect x='300' y='260' width='80' height='60' fill='%23059669' rx='3'/><rect x='400' y='260' width='80' height='60' fill='%23059669' rx='3'/><circle cx='140' cy='130' r='5' fill='%2310b981'/><circle cx='240' cy='130' r='5' fill='%2310b981'/><circle cx='340' cy='130' r='5' fill='%2310b981'/><circle cx='440' cy='130' r='5' fill='%2310b981'/><text x='300' y='380' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-size='14'>Residential CCTV Network</text></svg>" 
+                         alt="Residential CCTV Project" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="space-y-6">
+                    <div class="text-right">
+                        <div class="text-4xl font-bold text-blue-600">256 จุด</div>
+                        <div class="text-2xl font-bold text-gray-900">Residential CCTV System</div>
+                    </div>
+                    <div class="space-y-2 text-right">
+                        <div><strong>Client:</strong> หมู่บ้านบลูลากูน รีสอร์ท</div>
+                        <div><strong>Location:</strong> ระยอง, ประเทศไทย</div>
+                        <div><strong>As an EPC (Partner with UNIVIEW & SAMSUNG)</strong> - 2022</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 lg:order-2">
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600">32 จุด</div>
+                        <div class="text-2xl font-bold text-gray-900">Retail CCTV System</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div><strong>Client:</strong> เซ็นทรัล พัฒนา จำกัด (มหาชน)</div>
+                        <div><strong>Location:</strong> ระยอง, ประเทศไทย</div>
+                        <div><strong>As an EPC (Partner with PANASONIC)</strong> - 2022</div>
+                    </div>
+                </div>
+                <div class="portfolio-item lg:order-1">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect width='600' height='400' fill='%23fbbf24'/><rect x='50' y='50' width='500' height='300' fill='%23f59e0b' rx='10'/><rect x='100' y='100' width='120' height='80' fill='%23d97706' rx='5'/><rect x='240' y='100' width='120' height='80' fill='%23d97706' rx='5'/><rect x='380' y='100' width='120' height='80' fill='%23d97706' rx='5'/><rect x='100' y='200' width='120' height='80' fill='%23d97706' rx='5'/><rect x='240' y='200' width='120' height='80' fill='%23d97706' rx='5'/><rect x='380' y='200' width='120' height='80' fill='%23d97706' rx='5'/><circle cx='160' cy='140' r='8' fill='%23fbbf24'/><circle cx='300' cy='140' r='8' fill='%23fbbf24'/><circle cx='440' cy='140' r='8' fill='%23fbbf24'/><circle cx='160' cy='240' r='8' fill='%23fbbf24'/><circle cx='300' cy='240' r='8' fill='%23fbbf24'/><circle cx='440' cy='240' r='8' fill='%23fbbf24'/><text x='300' y='380' text-anchor='middle' fill='%23ffffff' font-family='Arial' font-size='14'>Retail CCTV System</text></svg>" 
+                         alt="Retail CCTV Project" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+                    ร่วมก้าวไปสู่ความปลอดภัยกับทีมผู้เชี่ยวชาญของเรา
+                </h2>
+                <p class="text-xl text-gray-300">
+                    เริ่มต้นวันนี้ สร้างความปลอดภัย พร้อมเทคโนโลยีที่ทันสมัย
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">ชื่อ</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="กรุณากรอกชื่อ">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">นามสกุล</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="กรุณากรอกนามสกุล">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium mb-2">อีเมล</label>
+                        <input type="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="กรุณากรอกอีเมล">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium mb-2">เบอร์โทรศัพท์</label>
+                        <input type="tel" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="กรุณากรอกเบอร์โทรศัพท์">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium mb-2">ข้อความ</label>
+                        <textarea rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="กรุณาระบุรายละเอียดโครงการ..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                        ส่ง
+                    </button>
+                </form>
+
+                <div class="text-center mt-8 text-gray-400">
+                    <p>Thanks for submitting!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="bg-blue-600 text-white px-3 py-2 rounded font-bold text-lg inline-block">
+                        SECUREVISION
+                    </div>
+                    <p class="text-gray-400">
+                        ผู้เชี่ยวชาญด้านระบบรักษาความปลอดภัย ให้บริการครบวงจรในจังหวัดระยองและพื้นที่ใกล้เคียง
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">บริการ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>ระบบกล้องวงจรปิด</li>
+                        <li>ระบบควบคุมการเข้าออก</li>
+                        <li>ระบบแจ้งเตือนภัย</li>
+                        <li>ระบบเครือข่าย</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">พื้นที่บริการ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>ระยอง</li>
+                        <li>มาบตาพุด</li>
+                        <li>พัทยา</li>
+                        <li>ชลบุรี</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">ติดต่อ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>038-123-456</li>
+                        <li>089-123-4567</li>
+                        <li>info@securevision-rayong.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SecureVision Rayong. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
